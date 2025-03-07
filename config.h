@@ -22,7 +22,8 @@ static const int topbar             = 0;     /* 0 means bottom bar */
 #define ICONSPACING 5 /* space between icon and title */
 static const unsigned int colorfultag = 1; /* 0 means use SchemeSel for selected tag */
 static const int focusonwheel       = 0;
-static const char *fonts[]          = { "Iosevka Term:size=14:style=Regular", "Material\\-Design\\-Iconic\\-Font:style=Design-Iconic-Font:size=16", "Iosevka Nerd Font Mono:size=14:style=Regular" };
+/* static const char *fonts[]          = { "Iosevka Aile:size=14:style=Regular", "Material\\-Design\\-Iconic\\-Font:style=Design-Iconic-Font:size=16", "Iosevka Nerd Font Mono:size=14:style=Regular" }; */
+static const char *fonts[]          = { "Iosevka Term:size=14:style=Regular", "Material\\-Design\\-Iconic\\-Font:style=Design-Iconic-Font:size=16" };
 static const char dmenufont[]       = "Iosevka Term:size=14";
 static const char col_gray1[] = "#020203";
 static const char col_gray2[] = "#1c252c";
@@ -100,7 +101,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m",  dmenumon,   "-fn", dmenufo
 static const char *termcmd[]  = { "wezterm", NULL };
 static const char *filecmd[]  = { "nemo", NULL };
 static const char *screenshotcmd[] = {
-    "screenshot", "area", NULL};
+    "/bin/sh", "-c", "maim -su | xclip -selection clipboard -t image/png", NULL};
 static const char *lockscreencmd[] = {"slock", NULL};
 
 /* Volume commands */
