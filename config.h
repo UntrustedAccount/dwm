@@ -22,19 +22,18 @@ static const int topbar             = 0;     /* 0 means bottom bar */
 #define ICONSPACING 5 /* space between icon and title */
 static const unsigned int colorfultag = 1; /* 0 means use SchemeSel for selected tag */
 static const int focusonwheel       = 0;
-/* static const char *fonts[]          = { "Iosevka Aile:size=14:style=Regular", "Iosevka Nerd Font Mono:size=14:style=Regular" }; */
-static const char *fonts[]          = { "Iosevka Term:size=14:style=Regular" };
-static const char dmenufont[]       = "Iosevka Term:size=14";
-static const char col_gray1[] = "#020203";
-static const char col_gray2[] = "#1c252c";
-static const char col_gray3[] = "#6b7078";
-static const char col_gray4[] = "#e3e6eb";
-static const char col_red[] = "#e05f65";
-static const char col_orange[] = "#f1cf8a";
-static const char col_green[] = "#78dba9";
-static const char col_cyan[] = "#74bee9";
-static const char col_blue[] = "#70a5eb";
-static const char col_purple[] = "#c68aee";
+static const char *fonts[]          = { "CozetteHiDpi:size=13:style=Regular" };
+static const char dmenufont[]       = "CozetteHiDpi:size=13";
+static const char col_gray1[] = "#141b1e";
+static const char col_gray2[] = "#232a2d";
+static const char col_gray3[] = "#b3b9b8";
+static const char col_gray4[] = "#dadada";
+static const char col_red[] = "#e57474";
+static const char col_orange[] = "#e5c76b";
+static const char col_green[] = "#8ccf7e";
+static const char col_cyan[] = "#6cbfbf";
+static const char col_blue[] = "#67b0e8";
+static const char col_purple[] = "#c47fd5";
 static const char col_borderbar[] = "#020203";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -50,8 +49,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"", "󰉋", "", "󰍡", "󰝚"};
-static const char *alttags[] = {"", "󰉋", "", "󰍡", "󰝚"};
+static const char *tags[] = {"", "", "", "", ""};
+static const char *alttags[] = {"", "", "", "", ""};
 static const int tagschemes[] = { SchemeTag1, SchemeTag2, SchemeTag3,
                                   SchemeTag4, SchemeTag5
                                 };
