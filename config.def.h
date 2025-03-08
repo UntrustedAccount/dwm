@@ -22,8 +22,8 @@ static const int topbar             = 0;     /* 0 means bottom bar */
 #define ICONSPACING 5 /* space between icon and title */
 static const unsigned int colorfultag = 1; /* 0 means use SchemeSel for selected tag */
 static const int focusonwheel       = 0;
-static const char *fonts[]          = { "CozetteHiDpi:size=26:style=Regular" };
-static const char dmenufont[]       = "CozetteHiDpi:size=26";
+static const char *fonts[]          = { "CozetteHiDpi:size=16" };
+static const char dmenufont[]       = "CozetteHiDpi:size=16";
 static const char col_gray1[] = "#141b1e";
 static const char col_gray2[] = "#232a2d";
 static const char col_gray3[] = "#b3b9b8";
@@ -34,7 +34,7 @@ static const char col_green[] = "#8ccf7e";
 static const char col_cyan[] = "#6cbfbf";
 static const char col_blue[] = "#67b0e8";
 static const char col_purple[] = "#c47fd5";
-static const char col_borderbar[] = "#020203";
+static const char col_borderbar[] = "#141b1e";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_cyan, col_gray1, col_gray1 },
