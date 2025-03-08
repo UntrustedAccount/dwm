@@ -12,11 +12,11 @@ purple=#c68aee
 
 function media() {
 	status=`playerctl status`
-  icon=""
+  icon="󰋌"
   if [[ "$status" == "Playing" ]]; then
-    icon=""
+    icon="󱕍"
   elif [[ "$status" == "Paused" ]]; then
-    icon=""
+    icon="󱗜"
   fi
 	if [[ -z "$status" ]]; then
 		printf "^c$black^^b$blue^ ${icon} ^d^%s""^c$white^^b$gray^ No Players ^b$black^"
@@ -29,9 +29,9 @@ function media() {
 function wifi() {
   wifi=`nmcli -t -f active,ssid dev wifi | grep -E '^yes' | cut -d\' -f2 | cut -b 5-`
   if [[ -z "$wifi" ]]; then
-	  printf "^c$black^^b$purple^  ^d^%s""^c$white^^b$gray^ Disconnected ^b$black^"
+	  printf "^c$black^^b$purple^ 󰤯 ^d^%s""^c$white^^b$gray^ Disconnected ^b$black^"
   else
-	  printf "^c$black^^b$purple^  ^d^%s""^c$white^^b$gray^ ${wifi} ^b$black^"
+	  printf "^c$black^^b$purple^ 󰤨 ^d^%s""^c$white^^b$gray^ ${wifi} ^b$black^"
   fi
 }
 
@@ -40,15 +40,15 @@ function cpu() {
 }
 
 function bri() {
-  printf "^c$red^  $(xbacklight -get)%% "
+  printf "^c$red^  $(xbacklight -get)%% "
 }
 
 function vol() {
   mute=`pamixer --get-mute`
   if [[ "$mute" == "true" ]]; then
-    printf "^c$blue^  Muted "
+    printf "^c$blue^ 󰖁 Muted "
   else
-    printf "^c$blue^  $(pamixer --get-volume)%% "
+    printf "^c$blue^ 󰕾 $(pamixer --get-volume)%% "
   fi
 }
 
@@ -57,14 +57,14 @@ function mem() {
 }
 
 function dat() {
-  printf "^c$black^^b$cyan0^  ^d^%s""^c$black^^b$cyan1^ $(date '+%b %d, %I:%M %p') ^b$black^"
+  printf "^c$black^^b$cyan0^ 󰃮 ^d^%s""^c$black^^b$cyan1^ $(date '+%b %d, %I:%M %p') ^b$black^"
 }
 
 function bat() {
   bat=`cat /sys/class/power_supply/BAT0/status`
-  icon=""
+  icon="󰁹"
   if [[ "$bat" == "Charging" || "$bat" == "Full" ]]; then
-    icon=""
+    icon="󰂄"
   fi
   printf " ^c$green^${icon} $(cat /sys/class/power_supply/BAT0/capacity)%% "
 }
