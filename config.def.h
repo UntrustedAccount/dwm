@@ -22,8 +22,8 @@ static const int topbar             = 0;     /* 0 means bottom bar */
 #define ICONSPACING 5 /* space between icon and title */
 static const unsigned int colorfultag = 1; /* 0 means use SchemeSel for selected tag */
 static const int focusonwheel       = 0;
-/* static const char *fonts[]          = { "Iosevka Aile:size=14:style=Regular", "Material\\-Design\\-Iconic\\-Font:style=Design-Iconic-Font:size=16", "Iosevka Nerd Font Mono:size=14:style=Regular" }; */
-static const char *fonts[]          = { "Iosevka Term:size=14:style=Regular", "Material\\-Design\\-Iconic\\-Font:style=Design-Iconic-Font:size=16" };
+/* static const char *fonts[]          = { "Iosevka Aile:size=14:style=Regular", "Iosevka Nerd Font Mono:size=14:style=Regular" }; */
+static const char *fonts[]          = { "Iosevka Term:size=14:style=Regular" };
 static const char dmenufont[]       = "Iosevka Term:size=14";
 static const char col_gray1[] = "#020203";
 static const char col_gray2[] = "#1c252c";
@@ -50,8 +50,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"", "", "", "", ""};
-static const char *alttags[] = { "", "", "", "", "" };
+static const char *tags[] = {"", "󰉋", "", "󰍡", "󰝚"};
+static const char *alttags[] = {"", "󰉋", "", "󰍡", "󰝚"};
 static const int tagschemes[] = { SchemeTag1, SchemeTag2, SchemeTag3,
                                   SchemeTag4, SchemeTag5
                                 };
